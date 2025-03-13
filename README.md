@@ -60,5 +60,14 @@ vc vai poder ver os Brokers, consumers, topics entre outros detalhes dos brokers
 Link de acesso: http://localhost:9021/clusters
 
 # 16° Passo:
+Depois de criar o Dockerfile configurar o go dentro do Dockerfile e atu-
+alizar o compose.yml, rodar o comando:
+docker-compose up -d
+Para subir novamente o kafka e e ele criar as novas configurações que vc fez, da um docker-compose ps para ver se a aplicação está no ar, e um docker logs teste-apache-kafka-kafka-1 para ver se todos os logs sobem sem nenhum erro.
+
+# 17° Passo:
+Para rodar o arquivo go digite esse comando dentro da pasta do projeto:
+go run cmd/producer/main.go
+
 
 
